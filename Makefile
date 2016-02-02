@@ -5,8 +5,7 @@ build:
 	-synctex=1 main.tex
 	
 run:
-	# Я использую atril для просмотра PDF
-	open -a Preview.app main.pdf &
+	open -a Preview.app main.pdf & #Открываем pdf в Preview
 	
 clean:
 	rm *.aux \
