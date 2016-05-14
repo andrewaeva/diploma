@@ -60,7 +60,7 @@
 \makeatother
 
 \renewcommand{\baselinestretch}{1.4} % Полуторный межстрочный интервал
-\parindent 1.27cm % Абзацный отступ
+\parindent 1.25cm % Абзацный отступ
 
 \sloppy             % Избавляемся от переполнений
 \hyphenpenalty=1000 % Частота переносов
@@ -70,7 +70,7 @@
 % Отступы у страниц
 \usepackage{geometry}
 \geometry{left=3cm}
-\geometry{right=1cm}
+\geometry{right=1.5cm}
 \geometry{top=2cm}
 \geometry{bottom=2cm}
 
@@ -98,7 +98,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[R]{\textrm{\thepage}}
+\fancyhead[C]{\textrm{\thepage}}
 \fancyheadoffset{0mm}
 \fancyfootoffset{0mm}
 \setlength{\headheight}{17pt}
@@ -106,7 +106,7 @@
 \renewcommand{\footrulewidth}{0pt}
 \fancypagestyle{plain}{ 
     \fancyhf{}
-    \rhead{\thepage}
+    \chead{\thepage}
 }
 
 % Формат подрисуночных надписей
@@ -114,7 +114,7 @@
 \DeclareCaptionLabelSeparator{defffis}{ -- } % Разделитель
 \captionsetup[figure]{justification=centering, labelsep=defffis, format=plain} % Подпись рисунка по центру
 \captionsetup[table]{justification=raggedright, labelsep=defffis, format=plain, singlelinecheck=false} % Подпись таблицы слева
-\addto\captionsrussian{\renewcommand{\figurename}{Рис.}} % Имя фигуры
+\addto\captionsrussian{\renewcommand{\figurename}{Рисунок}} % Имя фигуры
 
 % Пользовательские функции
 \newcommand{\addimg}[4]{ % Добавление одного рисунка
@@ -201,4 +201,4 @@
     }
 \makeatother
 
-\setcounter{page}{2} % Начало нумерации страниц
+\setcounter{page}{4} % Начало нумерации страниц
