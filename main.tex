@@ -5,12 +5,15 @@
 \documentclass[a4paper,14pt]{extarticle} % 14й шрифт
 \input{inc/preamble} % Подключаем преамбулу
 
+\usepackage{tocloft}
+\setlength\cftaftertoctitleskip{36pt}
 %%% Начало документа
 \begin{document}
 
-\tableofcontents % Содержание 
-\clearpage
+\input{inc/anon}
 
+\tableofcontents % Содержание
+\clearpage
 
 \input{inc/uslovn} % Список сокращений и условных обозначений
 \input{inc/termin} % Словарь терминов
