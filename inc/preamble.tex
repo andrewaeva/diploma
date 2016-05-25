@@ -158,7 +158,7 @@
     \else
         \expandafter\@secondoftwo
     \fi
-    {\oldcontentsline{#1}{\MakeTextUppercase{#2}}}
+    {\oldcontentsline{#1}{#2}}
     {\oldcontentsline{#1}{#2}}
 }
 \makeatother
@@ -174,14 +174,14 @@
 \newcommand{\anonsection}[1]{
     \phantomsection % Корректный переход по ссылкам в содержании
     \paragraph{\bfseries\centerline{{#1}}\vspace{1.5em}}
-    \addcontentsline{toc}{section}{\uppercase{#1}}
+    \addcontentsline{toc}{section}{{#1}}
 }
 
 % Секции для приложений
 \newcommand{\appsection}[1]{
     \phantomsection
     \paragraph{\centerline{{#1}}}
-    \addcontentsline{toc}{section}{\uppercase{#1}}
+    \addcontentsline{toc}{section}{{#1}}
 }
 
 % Библиография: отступы и межстрочный интервал
